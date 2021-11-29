@@ -9,5 +9,19 @@
         android:id="@+id/mainFragment"
         android:name="com.example.ca1_makeup_arintoul.MainFragment"
         android:label="main_fragment"
-        tools:layout="@layout/main_fragment" />
+        tools:layout="@layout/main_fragment" >
+        <action
+            android:id="@+id/action_edit_product"
+            app:destination="@id/editorFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/editorFragment"
+        android:name="com.example.ca1_makeup_arintoul.EditorFragment"
+        android:label="editor_fragment2"
+        tools:layout="@layout/editor_fragment2" >
+        <argument
+            android:name="productId"
+            app:argType="integer"
+            android:defaultValue="0" />
+    </fragment>
 </navigation>
