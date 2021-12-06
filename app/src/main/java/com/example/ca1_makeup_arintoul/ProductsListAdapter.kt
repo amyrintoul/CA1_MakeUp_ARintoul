@@ -14,8 +14,9 @@ import com.example.ca1_makeup_arintoul.databinding.ListItemBinding
 
 class ProductsListAdapter(private val productsList: List<ProductEntity>,
     private val listener: ListItemListener) :
-
     RecyclerView.Adapter<ProductsListAdapter.ViewHolder>(){
+
+    val selectedProducts = arrayListOf<ProductEntity>()
 
 
     inner class ViewHolder(itemView: View):
@@ -40,10 +41,28 @@ class ProductsListAdapter(private val productsList: List<ProductEntity>,
             root.setOnClickListener{
                 listener.onItemClick(product.id)
             }
+            fab.setOnClickListener{
+                if(selectedProducts.contains(product)) {
+                    selectedProducts.remove(product)
+                    fab.setImageResource(R.drawable.ic_makeup_women)
+                }else {
+                    selectedProducts.add(product)
+                    fab.setImageResource(R.drawable.ic_check)
+                }
+                listener.onItemSelectionChanged()
+            }
+            fab.setImageResource(
+                if(selectedProducts.contains(product)) {
+                    R.drawable.ic_check
+                } else {
+                    R.drawable.ic_makeup_women
+                }
+            )
         }
     }
     interface ListItemListener {
         fun onItemClick(productId: Int)
+        fun onItemSelectionChanged()
     }
 
 

@@ -18,9 +18,9 @@ class SampleDataProvider {
         }
 
         fun getProducts() = arrayListOf(
-            ProductEntity(1, getDate(0), sampleText1, "description", 0, "brand", "brand"),
-            ProductEntity(2, getDate(1), sampleText2, "description", 0, "brand", "brand"),
-            ProductEntity(3, getDate(2), sampleText3, "description", 0, "brand", "brand"),
+            ProductEntity( getDate(0), sampleText1, "description", 0, "brand", "brand"),
+            ProductEntity( getDate(1), sampleText2, "description", 0, "brand", "brand"),
+            ProductEntity( getDate(2), sampleText3, "description", 0, "brand", "brand"),
 
             )
     }

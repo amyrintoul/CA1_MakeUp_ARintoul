@@ -1,10 +1,7 @@
 package com.example.ca1_makeup_arintoul.data
 
 import androidx.lifecycle.LiveData
-import androidx.room.Dao
-import androidx.room.Insert
-import androidx.room.OnConflictStrategy
-import androidx.room.Query
+import androidx.room.*
 
 @Dao
 interface ProductDao {
@@ -27,5 +24,11 @@ interface ProductDao {
     //query the database and find out how many rows there are.
     @Query("SELECT COUNT(*) from products")
     fun getCount(): Int
+
+    @Delete //delete selected products
+    fun deleteProducts(selectedProducts: List<ProductEntity>): Int
+
+    @Query("DELETE FROM products") //deletes all products
+    fun deleteAll():Int
 
 }

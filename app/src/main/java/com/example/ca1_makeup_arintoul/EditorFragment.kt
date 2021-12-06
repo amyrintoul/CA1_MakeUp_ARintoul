@@ -9,6 +9,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.activity.OnBackPressedCallback
 import androidx.appcompat.app.AppCompatActivity
+import androidx.lifecycle.Observer
 import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
 import com.example.ca1_makeup_arintoul.databinding.EditorFragmentBinding
@@ -33,8 +34,9 @@ class EditorFragment : Fragment() {
         }
         //make the button do something
         setHasOptionsMenu(true)
+        viewModel = ViewModelProvider(this).get(EditorViewModel::class.java)
         binding = EditorFragmentBinding.inflate(inflater, container, false)
-        binding.editor.setText("You selected product number ${args.productId}")
+        binding.editor.setText("")
 
         requireActivity().onBackPressedDispatcher.addCallback(
             viewLifecycleOwner,
@@ -50,6 +52,10 @@ class EditorFragment : Fragment() {
             }
         )
 
+        viewModel.currentProduct.observe(viewLifecycleOwner, Observer {
+            binding.editor.setText(it.name)
+        })
+        viewModel.getProductById(args.productId)
         return binding.root
     }
 
@@ -68,10 +74,6 @@ class EditorFragment : Fragment() {
         return true
     }
 
-    override fun onActivityCreated(savedInstanceState: Bundle?) {
-        super.onActivityCreated(savedInstanceState)
-        viewModel = ViewModelProvider(this).get(EditorViewModel::class.java)
 
-    }
 
 }
