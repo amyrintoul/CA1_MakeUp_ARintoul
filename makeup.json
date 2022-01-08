@@ -1,0 +1,118 @@
+[
+  {
+  "id": 1048,
+  "brand": "colourpop",
+  "name": "Lippie Pencil",
+  "price": "5.0",
+  "price_sign": "$",
+  "currency": "CAD",
+  "image_link": "https://cdn.shopify.com/s/files/1/1338/0845/collections/lippie-pencil_grande.jpg?v=1512588769",
+  "product_link": "https://colourpop.com/collections/lippie-pencil",
+  "website_link": "https://colourpop.com",
+  "description": "Lippie Pencil A long-wearing and high-intensity lip pencil that glides on easily and prevents feathering. Many of our Lippie Stix have a coordinating Lippie Pencil designed to compliment it perfectly, but feel free to mix and match!",
+  "rating": null,
+  "category": "pencil",
+  "product_type": "lip_liner",
+  "tag_list": [
+  "cruelty free",
+  "Vegan"
+  ],
+  "created_at": "2018-07-08T23:45:08.056Z",
+  "updated_at": "2018-07-09T00:53:23.301Z",
+  "product_api_url": "http://makeup-api.herokuapp.com/api/v1/products/1048.json",
+  "api_featured_image": "//s3.amazonaws.com/donovanbailey/products/api_featured_images/000/001/048/original/open-uri20180708-4-13okqci?1531093614"
+  
+  },
+  {
+  "id": 1047,
+  "brand": "colourpop",
+  "name": "Blotted Lip",
+  "price": "5.5",
+  "price_sign": "$",
+  "currency": "CAD",
+  "image_link": "https://cdn.shopify.com/s/files/1/1338/0845/products/brain-freeze_a_800x1200.jpg?v=1502255076",
+  "product_link": "https://colourpop.com/collections/lippie-stix?filter=blotted-lip",
+  "website_link": "https://colourpop.com",
+  "description": "Blotted Lip Sheer matte lipstick that creates the perfect popsicle pout! Formula is lightweight, matte and buildable for light to medium coverage.",
+  "rating": null,
+  "category": "lipstick",
+  "product_type": "lipstick",
+  "tag_list": [
+  "cruelty free",
+  "Vegan"
+  ],
+  "created_at": "2018-07-08T22:01:20.178Z",
+  "updated_at": "2018-07-09T00:53:23.287Z",
+  "product_api_url": "http://makeup-api.herokuapp.com/api/v1/products/1047.json",
+  "api_featured_image": "//s3.amazonaws.com/donovanbailey/products/api_featured_images/000/001/047/original/open-uri20180708-4-e7idod?1531087336"
+  },
+  {
+  "id": 1046,
+  "brand": "colourpop",
+  "name": "Lippie Stix",
+  "price": "5.5",
+  "price_sign": "$",
+  "currency": "CAD",
+  "image_link": "https://cdn.shopify.com/s/files/1/1338/0845/collections/blottedlip-lippie-stix_grande.jpg?v=1512588803",
+  "product_link": "https://colourpop.com/collections/lippie-stix",
+  "website_link": "https://colourpop.com",
+  "description": "Lippie Stix Formula contains Vitamin E, Mango, Avocado, and Shea butter for added comfort and moisture. None of our Lippie formulas contain any nasty ingredients like Parabens or Sulfates.",
+  "rating": null,
+  "category": "lipstick",
+  "product_type": "lipstick",
+  "tag_list": [
+  "cruelty free",
+  "Vegan"
+  ],
+  "created_at": "2018-07-08T21:47:49.858Z",
+  "updated_at": "2018-07-09T00:53:23.274Z",
+  "product_api_url": "http://makeup-api.herokuapp.com/api/v1/products/1046.json",
+  "api_featured_image": "//s3.amazonaws.com/donovanbailey/products/api_featured_images/000/001/046/original/open-uri20180708-4-1f333k1?1531086651"
+  },
+  {
+  "id": 1045,
+  "brand": "colourpop",
+  "name": "No Filter Foundation",
+  "price": "12.0",
+  "price_sign": "$",
+  "currency": "CAD",
+  "image_link": "https://cdn.shopify.com/s/files/1/1338/0845/products/foundations-lineup_800x1200.jpg?v=1528927785",
+  "product_link": "https://colourpop.com/products/no-filter-matte-foundation",
+  "website_link": "https://colourpop.com/products/no-filter-matte-foundation",
+  "description": "Developed for the Selfie Age, our buildable full coverage, natural matte foundation delivers flawless looking skin from day-to-night. The oil-free, lightweight formula blends smoothly and is easily customizable to create the coverage you want. Build it up or sheer it out, it was developed with innovative soft-blurring pigments to deliver true color while looking and feeling natural. The lockable pump is easy to use and keeps your routine mess-free! As always, 100% cruelty-free and vegan.",
+  "rating": null,
+  "category": "liquid",
+  "product_type": "foundation",
+  "tag_list": [
+  "cruelty free",
+  "Vegan"
+  ],
+  "created_at": "2018-07-08T18:22:25.273Z",
+  "updated_at": "2018-07-09T00:53:23.313Z",
+  "product_api_url": "http://makeup-api.herokuapp.com/api/v1/products/1045.json",
+  "api_featured_image": "//s3.amazonaws.com/donovanbailey/products/api_featured_images/000/001/045/original/open-uri20180708-4-4bvqii?1531074237"
+  },
+  {
+  "id": 1044,
+  "brand": "boosh",
+  "name": "Lipstick",
+  "price": "26.0",
+  "price_sign": "$",
+  "currency": "CAD",
+  "image_link": "https://cdn.shopify.com/s/files/1/1016/3243/products/LIPBALM_LID_grande.jpg?v=1496848378",
+  "product_link": "https://www.boosh.ca/collections/all",
+  "website_link": "https://www.boosh.ca/",
+  "description": "All of our products are free from lead and heavy metals, parabens, phthalates, artificial colourants, and synthetic fragrances.  Boosh lipstick glides on smoothly for clean & protective SPF coverage. They are filled with hydrating oils and butters to preserve and enhance your lips natural surface. Organic sweet orange oil gives a light and cheerful scent.",
+  "rating": null,
+  "category": "lipstick",
+  "product_type": "lipstick",
+  "tag_list": [
+  "Chemical Free",
+  "Organic"
+  ],
+  "created_at": "2018-07-08T17:32:28.088Z",
+  "updated_at": "2018-09-02T22:52:06.669Z",
+  "product_api_url": "http://makeup-api.herokuapp.com/api/v1/products/1044.json",
+  "api_featured_image": "//s3.amazonaws.com/donovanbailey/products/api_featured_images/000/001/044/original/data?1531071233"
+  }
+]

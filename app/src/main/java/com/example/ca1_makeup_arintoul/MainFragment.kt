@@ -33,26 +33,22 @@ class MainFragment : Fragment(),
         setHasOptionsMenu(true) //if you want to use the options menu you need to call it
         //and pass in a value of true.
 
-        (activity as AppCompatActivity).supportActionBar?.let {
-            it.setDisplayHomeAsUpEnabled(true)
-            it.setHomeAsUpIndicator(R.drawable.ic_home)
-            //displays home icon
-
-
-        }
-
+//        (activity as AppCompatActivity).supportActionBar?.let {
+//            it.setDisplayHomeAsUpEnabled(true)
+//            it.setHomeAsUpIndicator(R.drawable.ic_home)
+//            //displays home icon
 
         binding = MainFragmentBinding.inflate(inflater, container, false)
         viewModel = ViewModelProvider(this).get(MainViewModel::class.java)
 
-        with(binding.recyclerView){
-            setHasFixedSize(true)
-            val divider = DividerItemDecoration(
-                context, LinearLayoutManager(context).orientation
-            )
-            addItemDecoration(divider)
-            //Creating a visual divider in between each of the rows.
-        }
+//        with(binding.recyclerView){
+//            setHasFixedSize(true)
+//            val divider = DividerItemDecoration(
+//                context, LinearLayoutManager(context).orientation
+//            )
+//            addItemDecoration(divider)
+//            //Creating a visual divider in between each of the rows.
+//        }
         viewModel.productsList?.observe(viewLifecycleOwner, Observer {
             Log.i("productLogging", it.toString())
             adapter = ProductsListAdapter(it, this@MainFragment)
@@ -77,7 +73,7 @@ class MainFragment : Fragment(),
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         return when(item.itemId) {
-            R.id.action_sample_data -> sampleData()
+
             R.id.action_delete -> deleteSelectedProducts()
             R.id.action_delete_all -> deleteAllProducts()
             else -> super.onOptionsItemSelected(item)
@@ -100,11 +96,7 @@ class MainFragment : Fragment(),
         return true
     }
 
-    private fun sampleData(): Boolean {
-        viewModel.sampleData()
-        return true
 
-    }
 
     override fun onItemClick(productId: Int) {
         Log.i(TAG, "onItemClick: recieved product on id $productId")
