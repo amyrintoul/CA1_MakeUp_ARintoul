@@ -13,14 +13,14 @@ class SampleDataProvider {
     
         """.trimIndent()
 
-        private val description1 = "Make Up"
+
 
         private fun getDate(diff: Long): Date {
             return Date(Date().time + diff)
         }
 
        fun getProducts() = arrayListOf(
-            ProductEntity( getDate(0), sampleText1, "description1", 0, "brand", "brand"),
+            ProductEntity( getDate(0), sampleText1, "description", 0, "brand", "brand"),
             ProductEntity( getDate(1), sampleText2, "description", 0, "brand", "brand"),
             ProductEntity( getDate(2), sampleText3, "description", 0, "brand", "brand"),
 
